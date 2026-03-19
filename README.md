@@ -58,22 +58,39 @@ HiFi is a full-stack messaging platform with a custom dark glass UI, 22 switchab
  
 ## Project Structure
  
-```
-hifi/
-├── frontend/
-│   ├── src/
-│   │   ├── components/     # Navbar, Sidebar, ChatContainer, MessageBubble...
-│   │   ├── pages/          # HomePage, LoginPage, SignUpPage, SettingsPage, ProfilePage
-│   │   ├── store/          # Zustand stores (auth, chat, theme)
-│   │   └── lib/            # axios instance, utils
+## Project Structure
+
+chat-app/
 ├── backend/
-│   ├── controllers/        # auth, message
-│   ├── models/             # User, Message
-│   ├── routes/             # auth, message routes
-│   ├── middleware/         # JWT protect route
-│   └── lib/                # db, socket, utils
-```
- 
+│   ├── src/
+│   │   ├── controllers/        # auth.controller.js, message.controller.js
+│   │   ├── lib/                # db.js, socket.js, cloudinary.js, utils.js
+│   │   ├── middleware/         # auth.middleware.js
+│   │   ├── models/             # user.model.js, message.model.js
+│   │   ├── routes/             # auth.route.js, message.route.js
+│   │   └── seeds/              # user.seed.js (15 demo users)
+│   ├── index.js
+│   └── .env
+│
+└── frontend/
+    ├── public/                 # avatar.png
+    └── src/
+        ├── components/
+        │   ├── skeletons/      # MessageSkeleton, SidebarSkeleton
+        │   ├── ChatContainer.jsx
+        │   ├── ChatHeader.jsx
+        │   ├── EmojiPicker.jsx
+        │   ├── HiFiIcon.jsx
+        │   ├── MessageBubble.jsx
+        │   ├── MessageInput.jsx
+        │   ├── Navbar.jsx
+        │   ├── NoChatSelected.jsx
+        │   └── Sidebar.jsx
+        ├── lib/                # axios.js, utils.js
+        ├── pages/              # HomePage, LoginPage, SignUpPage, SettingsPage, ProfilePage
+        ├── store/              # useAuthStore, useChatStore, useThemeStore
+        ├── App.jsx
+        └── main.jsx
 ---
  
 ## Getting Started
