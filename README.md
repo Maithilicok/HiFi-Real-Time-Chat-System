@@ -57,9 +57,7 @@ HiFi is a full-stack messaging platform with a custom dark glass UI, 22 switchab
 ---
  
 ## Project Structure
- 
-## Project Structure
-
+```
 chat-app/
 ├── backend/
 │   ├── src/
@@ -91,6 +89,7 @@ chat-app/
         ├── store/              # useAuthStore, useChatStore, useThemeStore
         ├── App.jsx
         └── main.jsx
+```
 ---
  
 ## Getting Started
