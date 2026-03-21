@@ -4,7 +4,7 @@ HiFi is a full-stack messaging platform with a custom dark glass UI, 22 switchab
  
  ## Live Demo
 
-> Coming soon — deploying to Vercel + Render
+Live: https://hifi-real-time-chat-system.onrender.com
  
 ## Screenshots
  
