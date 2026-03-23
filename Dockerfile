@@ -14,5 +14,5 @@ RUN npm install
 COPY backend/ ./
 COPY --from=frontend-build /app/frontend/dist ../frontend/dist
 
-EXPOSE 5001
+EXPOSE 8080
 CMD ["node", "src/index.js"]
